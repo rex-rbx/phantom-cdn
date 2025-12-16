@@ -12,7 +12,7 @@ local function vu21(p19)
     end
     return v20
 end
-getgenv().notiflib loadstring([=[local LibraryName = "Notification Library" -- yes
+getgenv().notiflib = loadstring([=[local LibraryName = "Notification Library" -- yes
 local NotificationLibrary = {}
 local TweenService = game:GetService("TweenService")
 local CoreGui = game:GetService("CoreGui") --plr.PlayerGui
