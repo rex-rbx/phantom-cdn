@@ -3,7 +3,6 @@ if gethui then
     CoreGui = gethui()
 elseif cloneref or clonereference then
     CoreGui = (cloneref or clonereference)(game:GetService("CoreGui"))
-    CoreGui.Name = "IrisInternalGui"
 else
     CoreGui = game:GetService("CoreGui")
 end
