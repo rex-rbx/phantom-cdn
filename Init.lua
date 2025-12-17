@@ -3951,13 +3951,6 @@ function Init.mousemoveabs(x, y)
 
     VirtualInputManager:SendMouseMoveEvent(x, y, _game)
 end
-function Init.getscriptclosure(s)
-    return function()
-        return table.clone(Init.require(s))
-    end
-end
-
-Init.getscriptfunction = Init.getscriptclosure
 
 function Init.isscriptable(object, property)
     if object and typeof(object) == 'Instance' then
