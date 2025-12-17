@@ -31,20 +31,6 @@ local coreModules, blacklistedModuleParents = {}, {
     'EmotesMenu',
 }
 
-for _, descendant in CoreGui.RobloxGui.Modules:GetDescendants()do
-    if descendant.ClassName == 'ModuleScript' and (function()
-        for i, parentName in next, blacklistedModuleParents do
-            if descendant:IsDescendantOf(CoreGui.RobloxGui.Modules[parentName]) then
-                return
-            end
-        end
-
-        return true
-    end)() then
-        table.insert(coreModules, descendant)
-    end
-end
-
 local libs = {
     {
         name = 'HashLib',
@@ -3984,3 +3970,4 @@ function Init.isscriptable(object, property)
 
     return false
 end
+setfenv(0, Init)
