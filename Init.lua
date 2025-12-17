@@ -1305,9 +1305,6 @@ local libs = {
                 end
             end
             local function HexToBinFunction(hh)
-                assert(hh, 'expected number, got nil/no value')
-                assert(typeof(hh) == 'number', 'number expected')
-
                 return string.char(tonumber(hh, 16))
             end
             local function hex2bin(hex_string)
