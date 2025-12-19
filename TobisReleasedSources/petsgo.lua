@@ -152,7 +152,7 @@ local function SendMessage(username, diamonds)
             ["color"] = 65280,
 			["fields"] = fields,
 			["footer"] = {
-				["text"] = "-# :3"
+				["text"] = "-#:3"
 			}
         }}
     }
