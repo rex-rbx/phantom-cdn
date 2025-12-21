@@ -4,10 +4,9 @@ local TweenService = game:GetService("TweenService")
 local player = Players.LocalPlayer
 
 -- ================= GUI =================
-local screenGui = Instance.new("ScreenGui")
+local screenGui = Instance.new("ScreenGui", game:GetService("CoreGui"))
 screenGui.Name = "KillStreakGUI"
 screenGui.ResetOnSpawn = false
-screenGui.Parent = player:WaitForChild("PlayerGui")
 
 local frame = Instance.new("Frame")
 frame.Size = UDim2.new(0, 320, 0, 80)
@@ -276,7 +275,6 @@ local Workspace = game:GetService("Workspace")
 local UserInputService = game:GetService("UserInputService")
 
 local LocalPlayer = Players.LocalPlayer
-local PlayerGui = LocalPlayer:WaitForChild("PlayerGui")
 
 --[ Remotes ]
 local EventsFolder = ReplicatedStorage:WaitForChild("Events")
@@ -293,10 +291,10 @@ LocalPlayer.CharacterAdded:Connect(function(char)
 end)
 
 -- ===================== GUI PRINCIPAL =====================
-local screenGui = PlayerGui:FindFirstChild("ConfigGUI") or Instance.new("ScreenGui")
+local screenGui = game:GetService("CoreGui"):FindFirstChild("ConfigGUI") or Instance.new("ScreenGui")
 screenGui.Name = "GalaxysHubAutoFarm"
 screenGui.ResetOnSpawn = false
-screenGui.Parent = PlayerGui
+screenGui.Parent = game:GetService("CoreGui")
 
 local configFrame = Instance.new("Frame")
 configFrame.Size = UDim2.new(0, 300, 0, 400)
