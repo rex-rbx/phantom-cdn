@@ -57,7 +57,7 @@ function DrawingLib.new(drawingType)
 			Thickness = 1
 		} + baseDrawingObj)
 
-		local lineFrame = Xeno.Instance.new("Frame")
+		local lineFrame = Instance.new("Frame")
 		lineFrame.Name = drawingIndex
 		lineFrame.AnchorPoint = (Vector2.one * .5)
 		lineFrame.BorderSizePixel = 0
@@ -131,7 +131,7 @@ function DrawingLib.new(drawingType)
 			OutlineColor = Color3.new()
 		} + baseDrawingObj)
 
-		local textLabel, uiStroke = Xeno.Instance.new("TextLabel"), Xeno.Instance.new("UIStroke")
+		local textLabel, uiStroke = Instance.new("TextLabel"), Instance.new("UIStroke")
 		textLabel.Name = drawingIndex
 		textLabel.AnchorPoint = (Vector2.one * .5)
 		textLabel.BorderSizePixel = 0
@@ -223,7 +223,7 @@ function DrawingLib.new(drawingType)
 			Filled = false
 		} + baseDrawingObj)
 
-		local circleFrame, uiCorner, uiStroke = Xeno.Instance.new("Frame"), Xeno.Instance.new("UICorner"), Xeno.Instance.new("UIStroke")
+		local circleFrame, uiCorner, uiStroke = Instance.new("Frame"), Instance.new("UICorner"), Instance.new("UIStroke")
 		circleFrame.Name = drawingIndex
 		circleFrame.AnchorPoint = (Vector2.one * .5)
 		circleFrame.BorderSizePixel = 0
@@ -293,7 +293,7 @@ function DrawingLib.new(drawingType)
 			Filled = false
 		} + baseDrawingObj)
 
-		local squareFrame, uiStroke = Xeno.Instance.new("Frame"), Xeno.Instance.new("UIStroke")
+		local squareFrame, uiStroke = Instance.new("Frame"), Instance.new("UIStroke")
 		squareFrame.Name = drawingIndex
 		squareFrame.BorderSizePixel = 0
 
@@ -356,7 +356,7 @@ function DrawingLib.new(drawingType)
 			Position = Vector2.zero
 		} + baseDrawingObj)
 
-		local imageFrame = Xeno.Instance.new("ImageLabel")
+		local imageFrame = Instance.new("ImageLabel")
 		imageFrame.Name = drawingIndex
 		imageFrame.BorderSizePixel = 0
 		imageFrame.ScaleType = Enum.ScaleType.Stretch
